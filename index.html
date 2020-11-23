@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore Email</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css'/>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Include Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+
+    <section id="app">
+        <h1>Generatore di Email</h1>
+        <!-- Lista Mail -->
+        <ul class="mails">
+            <li v-for="mail in mails" class="mail"> <i class="fas fa-envelope"></i> Email generata: <span class="mail"> {{mail}} </span></li>
+        </ul>
+    </section>
+
+    <!-- Include Axios -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.js'></script>
+    <!-- Include JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
